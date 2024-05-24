@@ -51,3 +51,35 @@
     flex-direction: row-reverse;
     background-color: white;
 }
+
+#scope {
+    text-align: center;
+    padding: 60px 0;
+}
+#scope h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: orange;
+    font-size: 30px;
+}
+#scope-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+.scope-box {
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    border-right: 2px solid gray;
+}
+.scope-box img {
+    width: 70%;
+    margin: auto;
+    max-height: 100px;
+}
+#scope-box-last {
+    border-right: none !important;
+}
