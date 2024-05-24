@@ -1,0 +1,27 @@
+nav {
+    position: sticky;
+    top: 0;
+    height: 60px;
+    padding: 10px 5%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 60px;
+    display: inline;
+}
+
+nav p {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    line-height: 60px;
+    color: black;
+    margin-left: 15px;
+}
