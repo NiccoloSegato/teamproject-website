@@ -1,4 +1,21 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat, Helvetica, sans-serif;
+}
+.button-main {
+    background-color: #f6a117;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.button-plain {
+    color: #f6a117;
+    display: inline-block;
+    font-style: italic;
 }
