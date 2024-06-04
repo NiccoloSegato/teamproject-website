@@ -41,28 +41,22 @@
     font-size: 30px;
 }
 #services-boxes h3 {
-    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-size: 30px;
 }
 #services-boxes-flex div {
     width: 45%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 #services-boxes-flex-l {
-    background-image: url("../assets/images/services-1.jpg");
+    background: linear-gradient(transparent, #000000D1), url("../assets/images/services-1.jpg") center/cover;
 }
 #services-boxes-flex-r {
-    background-image: url("../assets/images/services-2.jpg");
-}
-
-#circlescontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
-}
-#circlescontainer img {
-    width: 20%;
-    object-fit: cover;
+    background: linear-gradient(transparent, #000000D1), url("../assets/images/services-2.jpg") center/cover;
 }
 
 .sector-box {
@@ -84,11 +78,11 @@
 }
 .sector-box-left {
     flex-direction: row;
-    background-color: #f1f1f1;
+    background-color: white;
 }
 .sector-box-right {
     flex-direction: row-reverse;
-    background-color: white;
+    background-color: #f1f1f1;
 }
 
 #scope {
