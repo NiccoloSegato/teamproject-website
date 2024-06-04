@@ -8,15 +8,12 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 100;
 }
 
 nav img {
     height: 60px;
-    display: inline;
-}
-
-nav p {
-    display: inline;
+    margin: auto 0;
 }
 
 nav a {
