@@ -2,9 +2,13 @@
     font-family: Montserrat;
     src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf");
 }
+@font-face {
+    font-family: Comfortaa;
+    src: url("../assets/fonts/Comfortaa-VariableFont_wght.ttf");
+}
 body {
     margin: 0;
-    font-family: Montserrat, Helvetica, sans-serif;
+    font-family: Comfortaa, Helvetica, sans-serif;
 }
 .button-main {
     background-color: #f6a117;
