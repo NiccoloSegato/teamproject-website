@@ -96,7 +96,7 @@
 
 #scope {
     text-align: center;
-    padding: 60px 0;
+    padding: 100px 0;
     background-color: #f1f1f1;
 }
 #scope h2 {
@@ -131,13 +131,21 @@
 
 #whocontainer {
     width: 90%;
-    padding: 40px 5%;
-    background-image: url("../assets/images/who.jpg");
+    padding: 40px 0px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#whocontainer img {
+    width: 39%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 #whocontainer div {
-    border-left: 2px solid #f6a117;
-    width: 95%;
-    padding: 10px 2.5%;
+    width: 59%;
+    padding: 10px 0;
 }
 #case-history {
     width: 100%;
@@ -158,4 +166,27 @@
 .zzimg {
     width: 100%;
     margin: 0;
+}
+
+#ch {
+    width: 90%;
+    padding: 40px 0;
+    margin: auto;
+}
+#ch h2 {
+    font-size: 40px;
+}
+#ch div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(transparent, #000000D1), url("../assets/images/services-1.JPG") center/cover;
+    border-radius: 30px;
+}
+#ch div p {
+    color: white;
+    font-size: 30px;
+    padding: 20px 40px;
 }
