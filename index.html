@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles/global.css" type="text/css">
         <link rel="stylesheet" href="styles/navbar.css" type="text/css">
         <link rel="stylesheet" href="styles/index.css" type="text/css">
+        <script src="scripts/carousel.js" type="text/javascript"></script>
     </head>
     <body>
         <nav>
@@ -116,12 +117,15 @@
             <div id="ch">
                 <h2>Case History</h2>
                 <div id="ch-sub">
+                    <img src="assets/images/left-btn.png" class="ch-sub-arrows" id="ch-sub-arrow-left" alt="Previous image" onclick="previousCarousel()">
+                    <img src="assets/images/right-btn.png" class="ch-sub-arrows" id="ch-sub-arrow-right" alt="Next image" onclick="nextCarousel()">
                     <p id="ch-sub-title">Titolo del lavoro</p>
+                    <p id="ch-sub-counter">1 di 33</p>
                 </div>
             </div>
-            <div id="case-history">
+            <!--<div id="case-history">
                 <img src="assets/images/case-history.jpg" alt="Case history">
-            </div>
+            </div>-->
             
         </main>
         <footer>
