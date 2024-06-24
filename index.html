@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles/global.css" type="text/css">
         <link rel="stylesheet" href="styles/navbar.css" type="text/css">
         <link rel="stylesheet" href="styles/index.css" type="text/css">
+        <link rel="stylesheet" href="styles/footer.css" type="text/css">
         <script src="scripts/carousel.js" type="text/javascript"></script>
     </head>
     <body>
@@ -17,7 +18,7 @@
             <div>
                 <a href="#about">ABOUT</a>
                 <a href="#case-history">CASE HISTORY</a>
-                <a href="contacts.html">CONTACTS</a>
+                <a href="#contacts">CONTACTS</a>
             </div>
         </nav>
         <main>
@@ -43,69 +44,24 @@
                     </div>
                 </div>
             </div>
-            <img src="assets/images/zz1.jpg" alt="Section 1" class="zzimg">
-            <img src="assets/images/zz2.jpg" alt="Section 1" class="zzimg">
-            <img src="assets/images/zz3.jpg" alt="Section 1" class="zzimg">
-            <!--
+            <div id="sector-title">
+                <h2>I nostri settori</h2>
+                <p>Testo per descrivere la sezione e riempire lo spazio vuoto</p>
+            </div>
             <div id="sector-container">
-                <div class="sector-box sector-box-left">
-                    <img src="assets/images/sector-1.jpg" alt="Industrial">
-                    <div>
-                        <h3>INDUSTRIAL</h3>
-                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultri oravida. Risus commodo viverra maecenas accumsan lacus vel facilis.</p>
-                        <a href="industrial.html" class="button-plain">READ MORE</a>
-                    </div>
-                </div>
-                <div class="sector-box sector-box-right">
-                    <img src="assets/images/sector-2.jpg" alt="Industrial">
-                    <div>
-                        <h3>COMMERCIAL</h3>
-                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultri oravida. Risus commodo viverra maecenas accumsan lacus vel facilis.</p>
-                        <a href="industrial.html" class="button-plain">READ MORE</a>
-                    </div>
-                </div>
-                <div class="sector-box sector-box-left">
-                    <img src="assets/images/sector-3.jpg" alt="Urban">
-                    <div>
-                        <h3>URBAN</h3>
-                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultri oravida. Risus commodo viverra maecenas accumsan lacus vel facilis.</p>
-                        <a href="urban.html" class="button-plain">READ MORE</a>
-                    </div>
-                </div>
-                <div class="sector-box sector-box-right">
-                    <img src="assets/images/sector-4.jpg" alt="Civil">
-                    <div>
-                        <h3>CIVIL</h3>
-                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultri oravida. Risus commodo viverra maecenas accumsan lacus vel facilis.</p>
-                        <a href="civil.html" class="button-plain">READ MORE</a>
-                    </div>
-                </div>
-                <div class="sector-box sector-box-left">
-                    <img src="assets/images/sector-5.jpg" alt="Industrial">
-                    <div>
-                        <h3>FIRE RESISTANT</h3>
-                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultri oravida. Risus commodo viverra maecenas accumsan lacus vel facilis.</p>
-                        <a href="fire-resistant.html" class="button-plain">READ MORE</a>
-                    </div>
+                <img src="assets/images/zz1.jpg" alt="Section 1" class="zzimg">
+                <img src="assets/images/zz2.jpg" alt="Section 1" class="zzimg">
+                <img src="assets/images/zz3.jpg" alt="Section 1" class="zzimg">
+            </div>
+            <div id="ch">
+                <h2>Case History</h2>
+                <div id="ch-sub">
+                    <img src="assets/images/left-btn.png" class="ch-sub-arrows" id="ch-sub-arrow-left" alt="Previous image" onclick="previousCarousel()">
+                    <img src="assets/images/right-btn.png" class="ch-sub-arrows" id="ch-sub-arrow-right" alt="Next image" onclick="nextCarousel()">
+                    <p id="ch-sub-title">Case history 1</p>
+                    <p id="ch-sub-counter">1 di 33</p>
                 </div>
             </div>
-            <div id="scope">
-                <h2>PROGETTAZIONE INTEGRATA</h2>
-                <div id="scope-container">
-                    <div class="scope-box">
-                        <img src="assets/images/scope-1.png" alt="Architettura">
-                        <p>architettura</p>
-                    </div>
-                    <div class="scope-box">
-                        <img src="assets/images/scope-3.png" alt="Safety">
-                        <p>safety</p>
-                    </div>
-                    <div class="scope-box">
-                        <img src="assets/images/scope-5.png" alt="Strutture">
-                        <p>strutture</p>
-                    </div>
-                </div>
-            </div>-->
             <div id="whocontainer">
                 <img src="assets/images/team.jpg" alt="Who we are">
                 <div>
@@ -114,29 +70,31 @@
                     <a href="contacts.html" class="button-main">CONTATTACI</a>
                 </div>
             </div>
-            <div id="ch">
-                <h2>Case History</h2>
-                <div id="ch-sub">
-                    <img src="assets/images/left-btn.png" class="ch-sub-arrows" id="ch-sub-arrow-left" alt="Previous image" onclick="previousCarousel()">
-                    <img src="assets/images/right-btn.png" class="ch-sub-arrows" id="ch-sub-arrow-right" alt="Next image" onclick="nextCarousel()">
-                    <p id="ch-sub-title">Titolo del lavoro</p>
-                    <p id="ch-sub-counter">1 di 33</p>
+            <div id="contacts">
+                <h2>I nostri contatti</h2>
+                <p>Testo per riempire la sezione, da popolare con qualcosa di accattivante come Call to Action</p>
+                <div id="contacts-items">
+                    <div class="contacts-item" id="contacts-left-contact">
+                        <p class="contacts-item-white">amministrazione@teamproitalia.it</p>
+                        <p class="contacts-item-sub">E-mail</p>
+                    </div>
+                    <div class="contacts-item" id="contacts-right-contact">
+                        <p class="contacts-item-white">051 123456</p>
+                        <p class="contacts-item-sub">Telefono</p>
+                    </div>
                 </div>
             </div>
-            <!--<div id="case-history">
-                <img src="assets/images/case-history.jpg" alt="Case history">
-            </div>-->
-            
         </main>
         <footer>
             <div>
-                <p>TEAMPROJECT</p>
-                <p>© 2024</p>
+                <img src="assets/images/logo.png" alt="Logo">
+                <p>Copyright © 2024 - TeamProject S.r.l.</p>
+                <p>Via Rigosa 6, 40069 Zola Predosa - P.IVA 12345678912</p>
             </div>
             <div>
-                <a href="about.html">ABOUT</a>
-                <a href="case-history.html">CASE HISTORY</a>
-                <a href="contacts.html">CONTACTS</a>
+                <a href="#about">ABOUT</a>
+                <a href="#case-history">CASE HISTORY</a>
+                <a href="#contacts">CONTACTS</a>
             </div>
         </footer>
     </body>

@@ -31,7 +31,7 @@
 
 #about {
     text-align: center;
-    background-color: #f1f1f1;
+    /*background-color: #f1f1f1;*/
     padding: 40px 0;
 }
 #services-boxes-flex {
@@ -53,6 +53,7 @@
 #services-boxes-flex div {
     width: 45%;
     height: 400px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -62,36 +63,29 @@
     object-fit: contain;
 }
 #services-boxes-flex-l {
-    background: linear-gradient(transparent, #000000D1), url("../assets/images/services-1.jpg") center/cover;
+    background: url("../assets/images/services-1.jpg") center/cover;
 }
 #services-boxes-flex-r {
-    background: linear-gradient(transparent, #000000D1), url("../assets/images/services-2.jpg") center/cover;
+    background: linear-gradient(transparent, #0000003a), url("../assets/images/services-2.jpg") center/cover;
 }
 
-.sector-box {
-    display: flex;
-    justify-content: space-between;
+#sector-title {
+    margin: 50px auto 30px auto;
     width: 90%;
-    padding: 40px 5%;
 }
-.sector-box div {
-    width: 59%;
+#sector-title h2 {
+    font-size: 40px;
+    margin: 0;
 }
-.sector-box p {
-    color: grey;
+#sector-title p {
+    margin-top: 10px;
 }
-.sector-box img {
-    width: 39%;
-    height: 180px;
-    object-fit: cover;
-}
-.sector-box-left {
-    flex-direction: row;
-    background-color: white;
-}
-.sector-box-right {
-    flex-direction: row-reverse;
-    background-color: #f1f1f1;
+#sector-container {
+    width: 90%;
+    margin: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 #scope {
@@ -175,6 +169,7 @@
 }
 #ch h2 {
     font-size: 40px;
+    margin-bottom: 15px;
 }
 #ch div {
     display: flex;
@@ -211,4 +206,40 @@
 }
 #ch-sub-arrow-right {
     right: 40px;
+}
+
+#contacts {
+    width: calc(90% - 80px);
+    padding: 40px;
+    border-radius: 30px;
+    margin: auto;
+    background-color: #f6a117;
+    text-align: center;
+}
+#contacts h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+#contacts-items {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contacts-item-white {
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 0;
+    background-color: white;
+    color: black;
+}
+.contacts-item-sub {
+    margin-top: 10px;
+}
+#contacts-left-contact {
+    margin-right: 10px;
+}
+#contacts-right-contact {
+    margin-left: 10px;
 }

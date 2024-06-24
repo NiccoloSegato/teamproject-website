@@ -1,0 +1,15 @@
+footer {
+    background-color: #f1f1f1;
+    width: 90%;
+    margin-top: 40px;
+    padding: 30px 5%;
+}
+footer a {
+    color: #c37800;
+    text-decoration: none;
+    margin-right: 10px;
+}
+footer img {
+    height: 40px;
+    margin: 0;
+}
