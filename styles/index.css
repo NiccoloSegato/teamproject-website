@@ -30,9 +30,10 @@
 }
 
 #about {
-    text-align: center;
-    /*background-color: #f1f1f1;*/
     padding: 40px 0;
+}
+#title-services-boxes {
+    text-align: center;
 }
 #services-boxes-flex {
     display: flex;
@@ -43,27 +44,45 @@
 }
 #services-boxes-flex p {
     color: white;
-    font-size: 30px;
 }
-#services-boxes h3 {
-    margin-top: 30px;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-#services-boxes-flex div {
-    width: 45%;
+.services-box {
+    width: calc(45% - 40px);
+    padding: 20px;
     height: 400px;
-    border-radius: 20px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
+}
+.services-box-subtitle {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.services-box-title {
+    font-size: 30px;
+    margin: 0;
+}
+.services-box button {
+    position: absolute;
+    background-color: white;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Comfortaa, Helvetica, sans-serif;
 }
 #services-boxes-flex img {
     width: 5%;
     object-fit: contain;
 }
 #services-boxes-flex-l {
-    background: url("../assets/images/services-1.jpg") center/cover;
+    background: linear-gradient(transparent, #0000003a), url("../assets/images/services-1.jpg") center/cover;
 }
 #services-boxes-flex-r {
     background: linear-gradient(transparent, #0000003a), url("../assets/images/services-2.jpg") center/cover;
