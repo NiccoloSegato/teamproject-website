@@ -47,44 +47,72 @@
                     </div>
                 </div>
             </div>
+            <div id="whocontainer">
+                <div>
+                    <p id="who-overtitle">CHI SIAMO</p>
+                    <h2>Il nostro Team</h2>
+                    <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultri oravida. Risus commodo viverra maecenas accumsan lacus vel facilis. Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultri oravida. Risus commodo viverra maecenas accumsan lacus vel facilis</p>
+                    <a href="#contacts" class="button-main">Contattaci</a>
+                </div>
+                <img src="assets/images/team.jpg" alt="Who we are">
+            </div>
             <div id="sector-title">
                 <h2>I nostri settori</h2>
                 <p>Testo per descrivere la sezione e riempire lo spazio vuoto</p>
             </div>
-            <div id="sector-container">
-                <img src="assets/images/zz1.jpg" alt="Section 1" class="zzimg">
-                <img src="assets/images/zz2.jpg" alt="Section 1" class="zzimg">
-                <img src="assets/images/zz3.jpg" alt="Section 1" class="zzimg">
-            </div>
-            <div id="ch">
-                <h2>Case History</h2>
-                <div id="ch-sub">
-                    <img src="assets/images/left-btn.png" class="ch-sub-arrows" id="ch-sub-arrow-left" alt="Previous image" onclick="previousCarousel()">
-                    <img src="assets/images/right-btn.png" class="ch-sub-arrows" id="ch-sub-arrow-right" alt="Next image" onclick="nextCarousel()">
-                    <p id="ch-sub-title">Case history 1</p>
-                    <p id="ch-sub-counter">1 di 33</p>
+            <div class="sectors-container">
+                <div class="sector-card" id="sector-card-1">
+                    <p>Urban</p>
                 </div>
-            </div>
-            <div id="whocontainer">
-                <img src="assets/images/team.jpg" alt="Who we are">
-                <div>
-                    <h2>CHI SIAMO</h2>
-                    <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultri oravida. Risus commodo viverra maecenas accumsan lacus vel facilis. Lorem ipsum dolor sit amet, consecteur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultri oravida. Risus commodo viverra maecenas accumsan lacus vel facilis</p>
-                    <a href="contacts.html" class="button-main">CONTATTACI</a>
+                <div class="sector-card" id="sector-card-2">
+                    <p>Civil</p>
+                </div>
+                <div class="sector-card" id="sector-card-3">
+                    <p>Fire resistant</p>
+                </div>
+                <div class="sector-card" id="sector-card-4">
+                    <p>Safety</p>
+                </div>
+                <div class="sector-card" id="sector-card-5">
+                    <p>Industrial</p>
+                </div>
+                <div class="sector-card" id="sector-card-6">
+                    <p>Commercial</p>
                 </div>
             </div>
             <div id="contacts">
-                <h2>I nostri contatti</h2>
-                <p>Testo per riempire la sezione, da popolare con qualcosa di accattivante come Call to Action</p>
-                <div id="contacts-items">
-                    <div class="contacts-item" id="contacts-left-contact">
-                        <p class="contacts-item-white">amministrazione@teamproitalia.it</p>
-                        <p class="contacts-item-sub">E-mail</p>
+                <div id="contacts-left">
+                    <h2>I nostri contatti</h2>
+                    <p>Testo per riempire la sezione, da popolare con qualcosa di accattivante come Call to Action</p>
+                    <a href="callto:051123456" class="button-main">Chiamaci ora</a>
+                </div>
+                <div id="contacts-container">
+                    <div class="contacts-item">
+                        <p class="contacts-item-sub"><strong>E-mail</strong></p>
+                        <p class="contacts-item-cont">amministrazione@teamproitalia.it</p>
+                    </div><div class="contacts-item">
+                        <p class="contacts-item-sub"><strong>Telefono</strong></p>
+                        <p class="contacts-item-cont">051 123456</p>
                     </div>
-                    <div class="contacts-item" id="contacts-right-contact">
-                        <p class="contacts-item-white">051 123456</p>
-                        <p class="contacts-item-sub">Telefono</p>
+                    <div class="contacts-item" id="contacts-item-bottom">
+                        <p class="contacts-item-sub"><strong>PEC</strong></p>
+                        <p class="contacts-item-cont">email@pec.it</p>
                     </div>
+                </div>
+            </div>
+            <div id="ch">
+                <h2>Case History</h2>
+                <div id="ch-cont">
+                    <div id="ch-left">
+                        <p id="ch-left-uptitle">CASE HISTORY</p>
+                        <p id="ch-left-title">Case history 1</p>
+                        <div id="ch-left-indicators">
+                            <img src="assets/images/left-btn.png" class="ch-left-arrows" id="ch-sub-arrow-left" alt="Previous image" onclick="previousCarousel()">
+                            <p id="ch-left-counter">1 di 33</p>
+                            <img src="assets/images/right-btn.png" class="ch-left-arrows" id="ch-sub-arrow-right" alt="Next image" onclick="nextCarousel()">
+                        </div>
+                    </div>
+                    <div id="ch-right"></div>
                 </div>
             </div>
         </main>

@@ -2,9 +2,9 @@
 let currentImage = 1;
 
 function nextCarousel() {
-    const carousel = document.getElementById('ch-sub');
-    const carouselTitle = document.getElementById('ch-sub-title');
-    const carouselSubtitle = document.getElementById('ch-sub-counter');
+    const carousel = document.getElementById('ch-right');
+    const carouselTitle = document.getElementById('ch-left-title');
+    const carouselSubtitle = document.getElementById('ch-left-counter');
 
    if(currentImage === 33) {
        currentImage = 1;
@@ -19,9 +19,9 @@ function nextCarousel() {
 }
 
 function previousCarousel() {
-    const carousel = document.getElementById('ch-sub');
-    const carouselTitle = document.getElementById('ch-sub-title');
-    const carouselSubtitle = document.getElementById('ch-sub-counter');
+    const carousel = document.getElementById('ch-right');
+    const carouselTitle = document.getElementById('ch-left-title');
+    const carouselSubtitle = document.getElementById('ch-left-counter');
 
     if(currentImage === 1) {
         currentImage = 33;

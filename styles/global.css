@@ -17,6 +17,7 @@ body {
     padding: 20px 40px;
     border-radius: 30px;
     display: inline-block;
+    width: fit-content;
 }
 .button-plain {
     color: #f6a117;

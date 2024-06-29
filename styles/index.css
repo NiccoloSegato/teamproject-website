@@ -87,6 +87,76 @@
 #services-boxes-flex-r {
     background: linear-gradient(transparent, #0000003a), url("../assets/images/services-2.jpg") center/cover;
 }
+.sectors-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px 0;
+    padding: 0 5%;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sectors-container::-webkit-scrollbar {
+    display: none;
+}
+.sector-card {
+    min-width: 30%;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: background 0.2s;
+}
+.sector-card p {
+    color: white;
+    margin: 0;
+    font-size: 30px;
+}
+#sector-card-1 {
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-3.jpg") center/cover;
+}
+#sector-card-1:hover {
+    background: linear-gradient(#f6a11761, #f6a117), url("../assets/images/sector-3.jpg") center/cover;
+}
+#sector-card-2 {
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-4.jpg") center/cover;
+}
+#sector-card-2:hover {
+    background: linear-gradient(#f6a11761, #f6a117), url("../assets/images/sector-4.jpg") center/cover;
+}
+#sector-card-3 {
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/services-2.jpg") center/cover;
+}
+#sector-card-3:hover {
+    background: linear-gradient(#f6a11761, #f6a117), url("../assets/images/services-2.jpg") center/cover;
+}
+#sector-card-4 {
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-2.jpg") center/cover;
+}
+#sector-card-4:hover {
+    background: linear-gradient(#f6a11761, #f6a117), url("../assets/images/sector-2.jpg") center/cover;
+}
+#sector-card-5 {
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-1.jpg") center/cover;
+}
+#sector-card-5:hover {
+    background: linear-gradient(#f6a11761, #f6a117), url("../assets/images/sector-1.jpg") center/cover;
+}
+#sector-card-6 {
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-2.jpg") center/cover;
+}
+#sector-card-6:hover {
+    background: linear-gradient(#f6a11761, #f6a117), url("../assets/images/sector-2.jpg") center/cover;
+}
 
 #sector-title {
     margin: 50px auto 30px auto;
@@ -98,13 +168,6 @@
 }
 #sector-title p {
     margin-top: 10px;
-}
-#sector-container {
-    width: 90%;
-    margin: auto;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 #scope {
@@ -143,22 +206,32 @@
 }
 
 #whocontainer {
-    width: 90%;
-    padding: 40px 0px;
-    margin: auto;
+    width: 100%;
+    padding: 40px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 500px;
 }
 #whocontainer img {
-    width: 39%;
-    height: 400px;
+    width: 55%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 20px;
 }
 #whocontainer div {
-    width: 59%;
-    padding: 10px 0;
+    width: calc(40% - 20px);
+    padding-left: 5%;
+    padding-right: 20px;
+    background-color: #FFECCC;
+    align-content: center;
+}
+#whocontainer h2 {
+    font-size: 40px;
+    margin: 0;
+}
+#who-overtitle {
+    border-left: 3px solid #f6a117;
+    padding-left: 10px;
 }
 #case-history {
     width: 100%;
@@ -183,82 +256,93 @@
 
 #ch {
     width: 90%;
-    padding: 40px 0;
-    margin: auto;
+    margin: 90px auto;
 }
 #ch h2 {
     font-size: 40px;
-    margin-bottom: 15px;
 }
-#ch div {
+#ch-cont {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 8px;
+    overflow: hidden;
     height: 600px;
-    background: linear-gradient(transparent, #1f1f1fd1), url("../assets/images/case-history/1.jpg") center/cover;
-    border-radius: 30px;
 }
-#ch-sub {
+#ch-left {
+    background-color: #ebebeb;
+    width: calc(40% - 40px);
+    padding: 20px;
     position: relative;
 }
-#ch-sub-title {
-    color: white;
-    font-size: 30px;
-    padding: 0 40px;
+#ch-left-uptitle {
+    border-left: 3px solid #f6a117;
+    padding-left: 10px;
 }
-#ch-sub-counter {
-    padding: 0 40px 40px 40px;
-    font-size: 12px;
-    color: white;
-    margin: 0;
+#ch-left-title {
+    font-size: 25px;
 }
-.ch-sub-arrows {
+#ch-left-indicators {
+    background-color: #f6a117;
+    border-radius: 20px;
+    width: fit-content;
     position: absolute;
-    top: calc(50% - 20px);
-    width: 40px;
-    height: 40px;
+    bottom: 20px;
+    left: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+#ch-left-counter {
+    color: white;
+    margin: 0 20px;
+    line-height: 35px;
+}
+.ch-left-arrows {
+    width: 35px;
+    height: 35px;
     cursor: pointer;
 }
-#ch-sub-arrow-left {
-    left: 40px;
-}
-#ch-sub-arrow-right {
-    right: 40px;
+#ch-right {
+    width: 60%;
+    background-image: url("../assets/images/case-history/1.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 #contacts {
-    width: calc(90% - 80px);
-    padding: 40px;
-    border-radius: 30px;
-    margin: auto;
-    background-color: #f6a117;
-    text-align: center;
-}
-#contacts h2 {
-    font-size: 40px;
-    margin-bottom: 0;
-}
-#contacts-items {
-    margin-top: 40px;
+    width: 90%;
+    padding: 40px 5%;
+    margin-top: 110px;
+    background-color: #FFECCC;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+#contacts-left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
-.contacts-item-white {
-    padding: 15px 25px;
-    border-radius: 10px;
-    border: 1px solid black;
-    margin-bottom: 0;
-    background-color: white;
-    color: black;
+#contacts-left h2 {
+    font-size: 40px;
+    margin: 0;
+}
+#contacts-container {
+    width: 50%;
+}
+.contacts-item {
+    margin-bottom: 50px;
+}
+#contacts-item-bottom {
+    margin-bottom: 0 !important;
+}
+.contacts-item-cont {
+    font-size: 20px;
 }
 .contacts-item-sub {
-    margin-top: 10px;
-}
-#contacts-left-contact {
-    margin-right: 10px;
-}
-#contacts-right-contact {
-    margin-left: 10px;
+    border-left: 3px solid #f6a117;
+    padding-left: 10px;
 }
