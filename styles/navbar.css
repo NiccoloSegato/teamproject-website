@@ -23,3 +23,8 @@ nav a {
     color: black;
     margin-left: 15px;
 }
+@media screen and (max-width: 900px) {
+    #nav-links {
+        display: none;
+    }
+}
