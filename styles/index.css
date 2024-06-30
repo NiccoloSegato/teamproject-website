@@ -121,41 +121,81 @@
     margin: 0;
     font-size: 30px;
 }
+.sector-card a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: block;
+    padding: 10px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.3s;
+}
+.sector-card a i {
+    margin-right: 8px;
+    margin-left: 3px;
+}
+.sector-card:hover a {
+    width: 145px;
+}
 #sector-card-1 {
     background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-3.jpg") center/cover;
+    background-size: auto 100%;
+    background-position: center;
+    cursor: pointer;
 }
 #sector-card-1:hover {
-    background: linear-gradient(#f6a11761, #f6a117), url("../assets/images/sector-3.jpg") center/cover;
+    background-size: auto 105%;
 }
 #sector-card-2 {
     background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-4.jpg") center/cover;
+    background-size: auto 100%;
+    background-position: center;
+    cursor: pointer;
 }
 #sector-card-2:hover {
-    background: linear-gradient(#f6a11761, #f6a117), url("../assets/images/sector-4.jpg") center/cover;
+    background-size: auto 105%;
 }
 #sector-card-3 {
     background: linear-gradient(transparent, #0000009d), url("../assets/images/services-2.jpg") center/cover;
+    background-size: auto 100%;
+    background-position: center;
+    cursor: pointer;
 }
 #sector-card-3:hover {
-    background: linear-gradient(#f6a11761, #f6a117), url("../assets/images/services-2.jpg") center/cover;
+    background-size: auto 105%;
 }
 #sector-card-4 {
     background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-2.jpg") center/cover;
+    background-size: auto 100%;
+    background-position: center;
+    cursor: pointer;
 }
 #sector-card-4:hover {
-    background: linear-gradient(#f6a11761, #f6a117), url("../assets/images/sector-2.jpg") center/cover;
+    background-size: auto 105%;
 }
 #sector-card-5 {
     background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-1.jpg") center/cover;
+    background-size: auto 100%;
+    background-position: center;
+    cursor: pointer;
 }
 #sector-card-5:hover {
-    background: linear-gradient(#f6a11761, #f6a117), url("../assets/images/sector-1.jpg") center/cover;
+    background-size: auto 105%;
 }
 #sector-card-6 {
     background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-2.jpg") center/cover;
+    background-size: auto 100%;
+    background-position: center;
+    cursor: pointer;
 }
 #sector-card-6:hover {
-    background: linear-gradient(#f6a11761, #f6a117), url("../assets/images/sector-2.jpg") center/cover;
+    background-size: auto 105%;
 }
 
 #sector-title {
