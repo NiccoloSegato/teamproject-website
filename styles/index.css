@@ -17,8 +17,14 @@
     left: 0;
     width: calc(100% - 40px);
     color: white;
-    padding: 60px 20px;
+    padding: 60px 20px 0 20px;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+#big-video a {
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    bottom: 58px;
 }
 .caption h1 {
     font-size: 65px;
@@ -81,7 +87,7 @@
     font-family: Comfortaa, Helvetica, sans-serif;
 }
 #services-boxes-flex-l {
-    background: linear-gradient(transparent, #0000003a), url("../assets/images/services-1.jpg");
+    background: url("../assets/images/services-1.jpg") center/cover;
     background-size: auto 100%;
     background-position: center;
 }
@@ -89,12 +95,12 @@
     background-size: auto 105%;
 }
 #services-boxes-flex-r {
-    background: linear-gradient(transparent, #0000003a), url("../assets/images/services-2.jpg");
-    background-size: 100% auto;
+    background: url("../assets/images/30.jpg") center/cover;
+    background-size: auto 100%;
     background-position: center;
 }
 #services-boxes-flex-r:hover {
-    background-size: 105% auto;
+    background-size: auto 105%;
 }
 .sectors-container {
     display: flex;
@@ -153,15 +159,15 @@
     width: 145px;
 }
 #sector-card-1 {
-    background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-3.jpg") center/cover;
-    background-size: auto 100%;
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/2.jpg") center/cover;
+    background-size: 100% auto;
     background-position: center;
 }
 #sector-card-1:hover {
-    background-size: auto 105%;
+    background-size: 105% auto;
 }
 #sector-card-2 {
-    background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-4.jpg") center/cover;
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/4.jpg") center/cover;
     background-size: auto 100%;
     background-position: center;
 }
@@ -169,7 +175,7 @@
     background-size: auto 105%;
 }
 #sector-card-3 {
-    background: linear-gradient(transparent, #0000009d), url("../assets/images/services-2.jpg") center/cover;
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/7.jpg") center/cover;
     background-size: auto 100%;
     background-position: center;
 }
@@ -177,12 +183,12 @@
     background-size: auto 105%;
 }
 #sector-card-4 {
-    background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-2.jpg") center/cover;
-    background-size: auto 100%;
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/33.jpg") center/cover;
+    background-size: 100% auto;
     background-position: center;
 }
 #sector-card-4:hover {
-    background-size: auto 105%;
+    background-size: 105% auto;
 }
 #sector-card-5 {
     background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-1.jpg") center/cover;
@@ -193,7 +199,7 @@
     background-size: auto 105%;
 }
 #sector-card-6 {
-    background: linear-gradient(transparent, #0000009d), url("../assets/images/sector-2.jpg") center/cover;
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/19.jpg") center/cover;
     background-size: auto 100%;
     background-position: center;
 }
