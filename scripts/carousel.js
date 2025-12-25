@@ -329,6 +329,24 @@ let dictionary = [
         category: [5],
         title: 'Calliope (Teddy S.p.A.) - Bologna',
         description: 'Progettazione integrata, architettonica e strutturale, direzione lavori e coordinamento della sicurezza per l\'insediamento di nuovo locale commerciale.'
+    },
+    {
+        url: 'assets/images/case-history/56.jpg',
+        category: [1],
+        title: 'Progetto di nuovo fabbricato industriale - Castel San Pietro Terme (BO)',
+        description: 'Progettazione integrata, architettonica e strutturale, direzione lavori e coordinamento della sicurezza per la realizzaizione nuovo fabbricato industriale.'
+    },
+    {
+        url: 'assets/images/case-history/57.jpg',
+        category: [1],
+        title: 'Progetto di nuovo fabbricato industriale - Castel San Pietro Terme (BO)',
+        description: 'Progettazione integrata, architettonica e strutturale, direzione lavori e coordinamento della sicurezza per la realizzaizione nuovo fabbricato industriale.'
+    },
+    {
+        url: 'assets/images/case-history/58.jpg',
+        category: [1],
+        title: 'Progetto di nuovo fabbricato residenziale - Bologna',
+        description: 'Progettazione integrata, architettonica e strutturale, direzione lavori e coordinamento della sicurezza per la realizzaizione nuovo fabbricato residenziale.'
     }
 ];
 
@@ -341,7 +359,7 @@ function nextCarousel() {
     const carouselSbtl = document.getElementById('ch-left-subtitle');
     const carouselSubtitle = document.getElementById('ch-left-counter');
 
-   if(currentImage === 55) {
+   if(currentImage === 58) {
        currentImage = 1;
    }
     else {
@@ -354,7 +372,7 @@ function nextCarousel() {
     carousel.style.background = "url(\"" + imageData.url + "\") center/cover";
     carouselTitle.innerHTML = imageData.title;
     carouselSbtl.innerHTML = imageData.description;
-    carouselSubtitle.innerHTML = currentImage + ' di 55';
+    carouselSubtitle.innerHTML = currentImage + ' di 58';
     if(currentImage === 37) {
         // Align bottom of image object
         carousel.style.backgroundPosition = "bottom";
@@ -368,7 +386,7 @@ function previousCarousel() {
     const carouselSubtitle = document.getElementById('ch-left-counter');
 
     if(currentImage === 1) {
-        currentImage = 55;
+        currentImage = 58;
     }
     else {
         currentImage--;
@@ -380,7 +398,7 @@ function previousCarousel() {
     carousel.style.background = "url(\"" + imageData.url + "\") center/cover";
     carouselTitle.innerHTML = imageData.title;
     carouselSbtl.innerHTML = imageData.description;
-    carouselSubtitle.innerHTML = currentImage + ' di 55';
+    carouselSubtitle.innerHTML = currentImage + ' di 58';
     if(currentImage === 37) {
         // Align bottom of image object
         carousel.style.backgroundPosition = "bottom";
