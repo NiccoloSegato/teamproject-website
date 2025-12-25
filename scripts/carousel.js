@@ -257,6 +257,66 @@ let dictionary = [
         category: [6],
         title: 'Euros S.r.l. - Castel San Pietro Terme (BO)',
         description: 'Da generarere descrizione'
+    },
+    {
+        url: 'assets/images/case-history/44.jpg',
+        category: [6],
+        title: 'Coca-Cola HBC Italia S.r.l. - Rionero in Vulture (PZ)',
+        description: 'Da generarere descrizione'
+    },
+    {
+        url: 'assets/images/case-history/45.jpg',
+        category: [6],
+        title: 'IVECO Polo Tecnico - Torino',
+        description: 'Da generarere descrizione'
+    },
+    {
+        url: 'assets/images/case-history/46.jpg',
+        category: [2, 6],
+        title: 'Baglioni Hotel Luna - Venezia',
+        description: 'Da generarere descrizione'
+    },
+    {
+        url: 'assets/images/case-history/47.jpg',
+        category: [2],
+        title: 'Silo S.p.A. - Firenze',
+        description: 'Da generarere descrizione'
+    },
+    {
+        url: 'assets/images/case-history/48.jpg',
+        category: [2],
+        title: 'Silo S.p.A. - Firenze',
+        description: 'Da generarere descrizione'
+    },
+    {
+        url: 'assets/images/case-history/49.jpg',
+        category: [2],
+        title: 'Salumificio Fratelli Coati S.p.A. - Negrar (VR)',
+        description: 'Da generarere descrizione'
+    },
+    {
+        url: 'assets/images/case-history/50.jpg',
+        category: [2],
+        title: 'Gruppo Unipol - Bologna',
+        description: 'Da generarere descrizione'
+    },
+    {
+        url: 'assets/images/case-history/51.jpg',
+        category: [2],
+        title: 'Gruppo Unipol - Bologna',
+        description: 'Da generarere descrizione'
+    },
+    {
+        url: 'assets/images/case-history/52.jpg',
+        category: [2],
+        title: 'Gruppo Unipol - Bologna',
+        description: 'Da generarere descrizione'
+    },
+    {
+        url: 'assets/images/case-history/53.jpg',
+        category: [2],
+        title: 'Pack Center S.r.l. - Imola (BO)',
+        description: 'Da generarere descrizione'
     }
 ];
 
@@ -269,7 +329,7 @@ function nextCarousel() {
     const carouselSbtl = document.getElementById('ch-left-subtitle');
     const carouselSubtitle = document.getElementById('ch-left-counter');
 
-   if(currentImage === 43) {
+   if(currentImage === 53) {
        currentImage = 1;
    }
     else {
@@ -282,7 +342,7 @@ function nextCarousel() {
     carousel.style.background = "url(\"" + imageData.url + "\") center/cover";
     carouselTitle.innerHTML = imageData.title;
     carouselSbtl.innerHTML = imageData.description;
-    carouselSubtitle.innerHTML = currentImage + ' di 43';
+    carouselSubtitle.innerHTML = currentImage + ' di 53';
     if(currentImage === 37) {
         // Align bottom of image object
         carousel.style.backgroundPosition = "bottom";
@@ -296,7 +356,7 @@ function previousCarousel() {
     const carouselSubtitle = document.getElementById('ch-left-counter');
 
     if(currentImage === 1) {
-        currentImage = 43;
+        currentImage = 53;
     }
     else {
         currentImage--;
@@ -308,7 +368,7 @@ function previousCarousel() {
     carousel.style.background = "url(\"" + imageData.url + "\") center/cover";
     carouselTitle.innerHTML = imageData.title;
     carouselSbtl.innerHTML = imageData.description;
-    carouselSubtitle.innerHTML = currentImage + ' di 43';
+    carouselSubtitle.innerHTML = currentImage + ' di 53';
     if(currentImage === 37) {
         // Align bottom of image object
         carousel.style.backgroundPosition = "bottom";
