@@ -311,14 +311,14 @@
     margin: 0;
 }
 
-#ch {
+.ch {
     width: 90%;
     margin: 90px auto;
 }
-#ch h2 {
+.ch h2 {
     font-size: 40px;
 }
-#ch-cont {
+.ch-cont {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -326,20 +326,20 @@
     overflow: hidden;
     height: 600px;
 }
-#ch-left {
+.ch-left {
     background-color: #ebebeb;
     width: calc(40% - 40px);
     padding: 20px;
     position: relative;
 }
-#ch-left-uptitle {
+.ch-left-uptitle {
     border-left: 3px solid #f6a117;
     padding-left: 10px;
 }
-#ch-left-title {
+.ch-left-title {
     font-size: 25px;
 }
-#ch-left-indicators {
+.ch-left-indicators {
     background-color: #f6a117;
     border-radius: 20px;
     width: fit-content;
@@ -351,7 +351,7 @@
     flex-direction: row;
     justify-content: left;
 }
-#ch-left-counter {
+.ch-left-counter {
     color: white;
     margin: 0 20px;
     line-height: 35px;
@@ -361,7 +361,7 @@
     height: 35px;
     cursor: pointer;
 }
-#ch-right {
+.ch-right {
     width: 60%;
     background-image: url("../assets/images/case-history/1.jpg");
     background-size: cover;
