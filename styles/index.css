@@ -206,6 +206,14 @@
 #sector-card-6:hover {
     background-size: auto 105%;
 }
+#sector-card-7 {
+    background: linear-gradient(transparent, #0000009d), url("../assets/images/35.jpg") center/cover;
+    background-size: auto 100%;
+    background-position: center;
+}
+#sector-card-7:hover {
+    background-size: auto 105%;
+}
 
 #sector-title {
     margin: 50px auto 30px auto;
