@@ -512,4 +512,18 @@
     #whocontainer img {
         width: 100%;
     }
+
+    #ch-popup-cont {
+        width: 90%;
+        height: 90%;
+        flex-direction: column-reverse;
+    }
+    #ch-popup-left {
+        width: 100%;
+        height: 50%;
+    }
+    #ch-popup-right {
+        width: 100%;
+        height: 50%;
+    }
 }
