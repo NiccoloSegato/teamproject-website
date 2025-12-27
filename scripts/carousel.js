@@ -350,6 +350,16 @@ let dictionary = [
     }
 ];
 
+const categoriesDictionary = {
+    0: '-',
+    1: 'Civil',
+    2: 'Fire Resistant',
+    3: 'Safety',
+    4: 'Industrial',
+    5: 'Commercial',
+    6: 'Structures'
+};
+
 // From 1 to 33
 let currentImage = 1;
 let popupCurrentImage = 1;
@@ -412,6 +422,7 @@ function showPopup(carouselId) {
     const popupTitle = document.getElementById('ch-popup-left-title');
     const popupSbtl = document.getElementById('ch-popup-left-subtitle');
     const popupSubtitle = document.getElementById('ch-popup-left-counter');
+    const popupCategory = document.getElementById('ch-popup-category');
     popup.style.display = 'flex';
 
     // Find all the items in the dictionary with the carouselId in the category
@@ -424,6 +435,8 @@ function showPopup(carouselId) {
     popupTitle.innerHTML = items[popupCurrentImage - 1].title;
     popupSbtl.innerHTML = items[popupCurrentImage - 1].description;
     popupSubtitle.innerHTML = popupCurrentImage + ' di ' + items.length;
+    // Set the category text
+    popupCategory.innerHTML = categoriesDictionary[carouselId].toUpperCase();
 
     // Set listener for arrows
     const leftArrow = document.getElementById('ch-popup-sub-arrow-left');

@@ -422,6 +422,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 80px;
 }
 #ch-popup-cont {
     width: 80%;
@@ -429,11 +430,27 @@
 }
 #ch-popup-left {
     width: 40%;
-    height: 100%;
 }
 #ch-popup-right {
     width: 60%;
     height: 100%;
+}
+#ch-popup-category {
+    background-color: #f6a117;
+    color: white;
+    width: fit-content;
+    padding: 12px 15px 10px 15px;
+    border-radius: 20px;
+}
+#ch-popup-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
