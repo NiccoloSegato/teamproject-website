@@ -136,27 +136,31 @@
     margin: 0;
     font-size: 30px;
 }
-.sector-card a {
+.sector-card button {
     background-color: white;
     color: black;
     text-decoration: none;
     border-radius: 20px;
     margin-top: 10px;
     display: block;
-    padding: 10px;
-    line-height: 20px;
-    width: 20px;
-    height: 20px;
+    padding: 12px 10px;
+    line-height: 16px;
+    width: 40px;
+    height: 40px;
     overflow: hidden;
     white-space: nowrap;
     transition: width 0.3s;
+    border: none;
+    font-family: Comfortaa, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
 }
-.sector-card a i {
+.sector-card button i {
     margin-right: 8px;
     margin-left: 3px;
 }
-.sector-card:hover a {
-    width: 145px;
+.sector-card:hover button {
+    width: 165px;
 }
 #sector-card-1 {
     background: linear-gradient(transparent, #0000009d), url("../assets/images/2.jpg") center/cover;
@@ -325,6 +329,7 @@
     border-radius: 8px;
     overflow: hidden;
     height: 600px;
+    width: 100%;
 }
 .ch-left {
     background-color: #ebebeb;
@@ -402,6 +407,33 @@
 .contacts-item-sub {
     border-left: 3px solid #f6a117;
     padding-left: 10px;
+}
+
+/* Hidden slideshow */
+#ch-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ch-popup-cont {
+    width: 80%;
+    height: 60%;
+}
+#ch-popup-left {
+    width: 40%;
+    height: 100%;
+}
+#ch-popup-right {
+    width: 60%;
+    height: 100%;
 }
 
 @media screen and (max-width: 900px) {

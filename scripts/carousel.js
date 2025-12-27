@@ -352,6 +352,7 @@ let dictionary = [
 
 // From 1 to 33
 let currentImage = 1;
+let popupCurrentImage = 1;
 
 function nextCarousel() {
     const carousel = document.getElementById('ch-right');
@@ -403,4 +404,84 @@ function previousCarousel() {
         // Align bottom of image object
         carousel.style.backgroundPosition = "bottom";
     }
+}
+
+function showPopup(carouselId) {
+    const popup = document.getElementById('ch-popup');
+    const rightImage = document.getElementById('ch-popup-right');
+    const popupTitle = document.getElementById('ch-popup-left-title');
+    const popupSbtl = document.getElementById('ch-popup-left-subtitle');
+    const popupSubtitle = document.getElementById('ch-popup-left-counter');
+    popup.style.display = 'flex';
+
+    // Find all the items in the dictionary with the carouselId in the category
+    const items = dictionary.filter(item => item.category.includes(carouselId));
+    // Set currentImage to 1
+    popupCurrentImage = 1;
+
+    // Set the right image to the first item in the items array
+    rightImage.style.background = "url(\"" + items[popupCurrentImage - 1].url + "\") center/cover";
+    popupTitle.innerHTML = items[popupCurrentImage - 1].title;
+    popupSbtl.innerHTML = items[popupCurrentImage - 1].description;
+    popupSubtitle.innerHTML = popupCurrentImage + ' di ' + items.length;
+
+    // Set listener for arrows
+    const leftArrow = document.getElementById('ch-popup-sub-arrow-left');
+    const rightArrow = document.getElementById('ch-popup-sub-arrow-right');
+
+    leftArrow.onclick = function() {
+        previousPopupCarousel(carouselId);
+    }
+    rightArrow.onclick = function() {
+        popUpNextCarousel(carouselId);
+    }
+}
+
+function popUpNextCarousel(category) {
+    const rightImage = document.getElementById('ch-popup-right');
+    const popupTitle = document.getElementById('ch-popup-left-title');
+    const popupSbtl = document.getElementById('ch-popup-left-subtitle');
+    const popupSubtitle = document.getElementById('ch-popup-left-counter');
+
+    // Find all the items in the dictionary with the carouselId in the category
+    const items = dictionary.filter(item => item.category.includes(category));
+
+    if(popupCurrentImage === items.length) {
+        popupCurrentImage = 1;
+    }
+    else {
+        popupCurrentImage++;
+    }
+
+    rightImage.style.background = "url(\"" + items[popupCurrentImage - 1].url + "\") center/cover";
+    popupTitle.innerHTML = items[popupCurrentImage - 1].title;
+    popupSbtl.innerHTML = items[popupCurrentImage - 1].description;
+    popupSubtitle.innerHTML = popupCurrentImage + ' di ' + items.length;
+}
+
+function previousPopupCarousel(category) {
+    const rightImage = document.getElementById('ch-popup-right');
+    const popupTitle = document.getElementById('ch-popup-left-title');
+    const popupSbtl = document.getElementById('ch-popup-left-subtitle');
+    const popupSubtitle = document.getElementById('ch-popup-left-counter');
+
+    // Find all the items in the dictionary with the carouselId in the category
+    const items = dictionary.filter(item => item.category.includes(category));
+
+    if(popupCurrentImage === 1) {
+        popupCurrentImage = items.length;
+    }
+    else {
+        popupCurrentImage--;
+    }
+
+    rightImage.style.background = "url(\"" + items[popupCurrentImage - 1].url + "\") center/cover";
+    popupTitle.innerHTML = items[popupCurrentImage - 1].title;
+    popupSbtl.innerHTML = items[popupCurrentImage - 1].description;
+    popupSubtitle.innerHTML = popupCurrentImage + ' di ' + items.length;
+}
+
+function closePopup() {
+    const popup = document.getElementById('ch-popup');
+    popup.style.display = 'none';
 }
